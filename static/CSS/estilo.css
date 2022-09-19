@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 /*GENERALES*/
+:root{
+  --negro: #000000;
+  --grisOscuro: #262626;
+  --blanco: #FFFF;
+  --fondo: #3A4E51;
+  --fondoTitulos: #5A786F;
+  --fondosContenedor: #e7e0d4e6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,12 +26,12 @@ body {
   /* Cambio de fuente */
   font-size: 1.6rem;
   line-height: 2;
-  background-color: #588157;
+  background-color: var(--fondo);
 }
 
 h2 {
   text-align: center;
-  color: white;
+  color: var(--blanco);
   font-size: 30px;
   margin-top: 0;
   text-transform: uppercase;
@@ -30,7 +39,7 @@ h2 {
 
 h3 {
   text-align: center;
-  color: white;
+  color: var(--blanco);
   font-size: 20px;
   margin-top: 0;
   text-transform: uppercase;
@@ -56,7 +65,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #262626;
+  background-color: var(--grisOscuro);
   padding-left: 25px;
 }
 
@@ -77,13 +86,14 @@ h3 {
 }
 
 .inicio .title-lugares {
-  color: white;
+  color: var(--blanco);
   max-width: 100rem;
   padding-left: 20px;
   line-height: 2;
   font-size: 3.4rem;
-  margin: 3rem 0 0 60rem;
-  background-color: #4e704d;
+  margin: 3rem auto;
+  align-items: center;
+  background-color: var(--fondoTitulos);
   -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4));
           filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4));
 }
@@ -108,7 +118,7 @@ h3 {
 
 .back-barra .disenonav {
   display: inline-block;
-  color: white;
+  color: var(--blanco);
   padding: 10px 20px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -124,7 +134,7 @@ h3 {
 }
 
 .back-barra .disenonav:hover {
-  background: #588157;
+  background: var(--fondoTitulos);
 }
 
 .back-barra #btn-sus {
@@ -165,13 +175,13 @@ h3 {
 }
 
 .back-barra .search:hover input {
-  border: 2px solid #588157;
+  border: 2px solid var(--fondoTitulos);
 }
 
 .back-barra .search .gg-search {
   margin-top: 30px;
   margin-left: 5px;
-  color: white;
+  color: var(--blanco);
 }
 
 .back-barra .registro {
@@ -223,7 +233,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: rgba(231, 224, 212, 0.9);
+  background: var(--fondosContenedor);
 }
 
 .cartas-lugares .carta img {
