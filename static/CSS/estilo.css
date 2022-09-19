@@ -299,14 +299,28 @@ h3 {
 }
 
 .cartas-lugares .carta .comentarios-centrado .publicar-comentario {
-  background: #01161e;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 1rem;
-  margin: 0.5rem 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    color: var(--blanco);
+    background-color: var(--grisOscuro);
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    
 }
+.cartas-lugares .carta .comentarios-centrado .publicar-comentario:hover{
 
+  transition : 1000ms;
+  padding: 10px 50px;
+  transform : translateY(-0px);
+  background-color: var(--blanco);
+  color: var(--fondoTitulos);
+  border: solid 2px var(--fondoTitulos);
+  }
 .cartas-lugares .carta textarea {
   background: rgba(243, 239, 233, 0.9);
   padding: 1rem;
