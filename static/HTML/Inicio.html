@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Regios Check</title>
+    <link rel="stylesheet" href="./../CSS/estilo.css" />
+    <link href="https://unpkg.com/css.gg/icons/all.css" rel="stylesheet" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+    <script src="./../JS/script.js" async></script>
+  </head>
+
+  <body class="diseno-body">
+    <header class="site-header inicio">
+      <!--barra de navegacion-->
+      <div class="titulo-header">
+        <img src="./../assets/logo.png" class="bar" />
+        <h1 class="name titulo-text">Regios Check</h1>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+
+      <!-- Barra de inicio -->
+      <nav class="back-barra">
+        <a href="Inicio.html" class="disenonav">Inicio</a>
+        <a href="lugares.html" class="disenonav">Lugares</a>
+        <div class="search">
+          <input
+            type="search"
+            name="busqueda"
+            placeholder="Buscar"
+            onclick="window.location.href='lugares.html'"
+          />
+          <i class="gg-search"></i>
+        </div>
+        <a href="registro.html" class="disenonav registro" id="registrar-ses">
+          Registrarse
+        </a>
+        <a href="iniciarSesion.html" class="disenonav registro" id="abrir-ses"
+          >Iniciar Sesion</a
+        >
+        <a class="disenonav registro" id="cerrar-ses" onclick="logout()">
+          Cerrar Sesion
+        </a>
+      </nav>
+
+      <!-- Carta sal de tu zona -->
+      <div class="encabezado">
+        <h1>Sal de tu zona de confort</h1>
+        <!-- Encabezado -->
+        <p>Disfruta tu ciudad</p>
+      </div>
+    </header>
+
+    <!--salto de linea-->
+    <br />
+
+    <main class="principal-index">
+      <!--Coleccion de lugares-->
+      <h2>Visita Lugares Como</h2>
+      <div class="diseno-tabla">
+        <div class="carta">
+          <a href="lugares.html#Fundi"
+            ><img src="./../assets/fundi.jpg" class="imagenes"
+          /></a>
+          <div class="titulos">Fundidora</div>
+        </div>
+
+        <div class="carta">
+          <a href="lugares.html">
+            <img src="./../assets/bosque.jpg" class="imagenes" /></a>
+          <div class="titulos">Bioparque</div>
+        </div>
+
+        <div class="carta">
+          <a href="lugares.html"><img src="./../assets/rio.jpg" class="imagenes" /></a>
+          <div class="titulos">Rio Santa Lucia</div>
+        </div>
+
+        <div class="carta">
+          <a href="lugares.html"
+            ><img src="./../assets/obispado.jpg" class="imagenes"
+          /></a>
+          <div class="titulos">Obispado</div>
+        </div>
+
+        <div class="carta">
+          <a href="lugares.html"><img src="./../assets/magico.jpg" class="imagenes" /></a>
+          <div class="titulos">Bosque Magico</div>
+        </div>
+
+        <div class="carta">
+          <a href="lugares.html"
+            ><img src="./../assets/kidzania.jpg" class="imagenes"
+          /></a>
+          <div class="titulos">Kidzania</div>
+        </div>
+
+        <div class="carta">
+          <a href="lugares.html"><img src="./../assets/museo.jpg" class="imagenes" /></a>
+          <div class="titulos">Museo Marco</div>
+        </div>
+
+        <div class="carta">
+          <a href="lugares.html"><img src="./../assets/tolteca.jpg" class="imagenes" /></a>
+          <div class="titulos">Parque Tolteca</div>
+        </div>
+
+        <div class="carta">
+          <a href="lugares.html"
+            ><img
+              src="./../assets/lugares/MuseoHistoriaMexicana.jpg"
+              class="imagenes"
+          /></a>
+          <div class="titulos">Museo de Historia Mexicana</div>
+        </div>
+      </div>
+
+      <div class="sobre-nosotros">
+        <h2 class="sn-titulo">¿Quienes somos?</h2>
+        <!-- Encabezado -->
+        <p class="sn-text">
+          Somos un grupo que quiere dar a conocer a lugares como restaurantes,
+          lugares para salir a caminar, para jugar, para salir de senderismo,
+          entre otras actividades que se pueden realizar en el área
+          metropolitana para los ciudadanos que son nuevos en Monterrey. Ademas
+          nos consideramos un blog especializado en realizar reseñas de
+          restaurantes , bares , Food trucks , eventos, lugares y antros de la
+          ciudad de MTY. Contacto regioscheck@gmail.com
+        </p>
+      </div>
+      <section class="site-section inicio"></section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,336 @@
+<html>
+  <head>
+    <title>Regios Check</title>
+    <link rel="stylesheet" href="./../CSS/estilo.css" />
+    <link href="https://unpkg.com/css.gg/icons/all.css" rel="stylesheet" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+    <script src="./../JS/script.js" async></script>
+  </head>
+  <body class="diseno-body">
+    <!--barra de navegacion-->
+    <header class="inicio">
+      <!--barra de navegacion-->
+      <div class="titulo-header">
+        <img src="./../assets/logo.png" class="bar" />
+        <h1 class="name titulo-text">Regios Check</h1>
+      </div>
+      <nav class="back-barra">
+        <a href="Inicio.html" class="disenonav">Inicio</a>
+        <a href="lugares.html" class="disenonav">Lugares</a>
+        <div class="search">
+          <input
+            type="search"
+            name="busqueda"
+            placeholder="Buscar"
+            id="searchBar"
+          />
+          <i class="gg-search"></i>
+        </div>
+        <a href="registro.html" class="disenonav registro" id="registrar-ses">
+          Registrarse
+        </a>
+        <a href="iniciarSesion.html" class="disenonav registro" id="abrir-ses"
+          >Iniciar Sesion</a
+        >
+        <a class="disenonav registro" id="cerrar-ses" onclick="logout()">
+          Cerrar Sesion
+        </a>
+      </nav>
+      <div class="title-lugares">
+        <h2>Lugares</h2>
+      </div>
+    </header>
+
+    <!--salto de linea-->
+    <br />
+
+    <main class="principal-lugares">
+      <div class="carta-lugar busqueda" id="parqueFundidora">
+        <div class="lugares-page lug-izq">
+          <h3 class="lp-titulo">Horno 3 "Parque fundidora"</h3>
+          <!-- Encabezado -->
+          <p style="text-align: justify">
+            Horno 3 es un centro interactivo de ciencia y tecnología y museo del
+            acero, ubicado dentro del Parque Fundidora, específicamente en la
+            estructura original del Alto Horno No.3 de la Compañía Fundidora de
+            Fierro y Acero de Monterrey
+          </p>
+          <p style="text-align: justify">
+            Horno3 es un Centro Interactivo de Ciencia y Tecnología, que a
+            través de los fascinantes procesos del acero promueve la educación
+            científica y tecnológica entre niños y jóvenes, cuenta con seis
+            experiencias que hacen al visitante transportarse a la época de
+            operación de la antigua Fundidora, conocer todos los procesos de
+            fabricación del acero a través de interesantes interactivos y
+            adentrarse en el maravilloso mundo del pensamiento científico
+            mediante divertidas demostraciones y experimentos.
+          </p>
+          <hr />
+          <p style="text-align: justify">http://www.horno3.org/</p>
+          <p style="text-align: justify">81 8126 1100</p>
+          <p style="text-align: justify">info@horno3.org</p>
+        </div>
+        <section class="site-img inicio"></section>
+
+        <!-- COMENTARIOS -->
+        <div class="comentarios-centrado">
+          <button class="btn-mostrar" onclick="mostrarComentarios()">
+            Mostrar Opiniones
+          </button>
+
+          <div class="mostrar-comentarios">
+            <div class="comentarios" id="contenedor"></div>
+            <br />
+            <form id="comments" class="hacer-comentario">
+              <label for="comment" class="label-comentario"
+                >Escribe una opinion</label
+              >
+              <textarea
+                name="comment"
+                id="comment"
+                class="area-comentario"
+                cols="50"
+                rows="5"
+                placeholder="Tu comentario"
+              ></textarea>
+              <button
+                type="submit"
+                class="publicar-comentario"
+                onclick="submitComentario()"
+              >
+                Publicar
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="ubi-fondo">
+          <i class="gg-pin ubi-icon"></i>
+          <div>
+            <h3 class="ub-titulo">Ubicados en:</h3>
+            <p class="ub-text">
+              Av. Fundidora Parque, Fundidora, 64010 Monterrey, N.L.
+            </p>
+            <p class="ub-text">Lunes a domingo 12:00 - 19:00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carta-lugar busqueda" id="bioparque">
+        <div class="lugares-page lug-der">
+          <h3 class="lp-titulo">Bioparque Estrella</h3>
+          <!-- Encabezado -->
+          <p style="text-align: justify">
+            horno³ es un centro interactivo de ciencia y tecnología y museo del
+            acero, ubicado dentro del Parque Fundidora, específicamente en la
+            estructura original del Alto Horno No.3 de la Compañía Fundidora de
+            Fierro y Acero de Monterrey
+          </p>
+          <p style="text-align: justify">
+            horno3 es un Centro Interactivo de Ciencia y Tecnología, que a
+            través de los fascinantes procesos del acero promueve la educación
+            científica y tecnológica entre niños y jóvenes, cuenta con seis
+            experiencias que hacen al visitante transportarse a la época de
+            operación de la antigua Fundidora, conocer todos los procesos de
+            fabricación del acero a través de interesantes interactivos y
+            adentrarse en el maravilloso mundo del pensamiento científico
+            mediante divertidas demostraciones y experimentos.
+          </p>
+          <hr />
+          <p style="text-align: justify">http://www.horno3.org/</p>
+          <p style="text-align: justify">81 8126 1100</p>
+          <p style="text-align: justify">info@horno3.org</p>
+        </div>
+        <section class="site-img2 inicio"></section>
+
+        <!-- COMENTARIOS -->
+        <div class="comentarios-centrado">
+          <button class="btn-mostrar" onclick="mostrarComentarios2()">
+            Mostrar Opiniones
+          </button>
+
+          <div class="mostrar-comentarios">
+            <div class="comentarios" id="contenedor2"></div>
+            <br />
+            <form id="comments2" class="hacer-comentario">
+              <label for="comment" class="label-comentario"
+                >Escribe una opinion</label
+              >
+              <textarea
+                name="comment"
+                id="comment"
+                class="area-comentario"
+                cols="50"
+                rows="5"
+                placeholder="Tu comentario"
+              ></textarea>
+              <button
+                type="submit"
+                class="publicar-comentario"
+                onclick="submitComentario2()"
+              >
+                Publicar
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="ubi-fondo">
+          <i class="gg-pin ubi-icon"></i>
+          <div>
+            <h3 class="ub-titulo">Ubicados en:</h3>
+            <p class="ub-text">64850, Torremolinos, 64850 Monterrey, N.L.</p>
+            <p class="ub-text">Lunes a domingo 09:00 - 17:00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carta-lugar busqueda" id="santaLucia">
+        <div class="lugares-page lug-izq">
+          <h3 class="lp-titulo">Paseo Santa Lucia</h3>
+          <!-- Encabezado -->
+          <p style="text-align: justify">
+            horno³ es un centro interactivo de ciencia y tecnología y museo del
+            acero, ubicado dentro del Parque Fundidora, específicamente en la
+            estructura original del Alto Horno No.3 de la Compañía Fundidora de
+            Fierro y Acero de Monterrey
+          </p>
+          <p style="text-align: justify">
+            horno3 es un Centro Interactivo de Ciencia y Tecnología, que a
+            través de los fascinantes procesos del acero promueve la educación
+            científica y tecnológica entre niños y jóvenes, cuenta con seis
+            experiencias que hacen al visitante transportarse a la época de
+            operación de la antigua Fundidora, conocer todos los procesos de
+            fabricación del acero a través de interesantes interactivos y
+            adentrarse en el maravilloso mundo del pensamiento científico
+            mediante divertidas demostraciones y experimentos.
+          </p>
+          <hr />
+          <p style="text-align: justify">http://www.horno3.org/</p>
+          <p style="text-align: justify">81 8126 1100</p>
+          <p style="text-align: justify">info@horno3.org</p>
+        </div>
+        <section class="site-img3 inicio"></section>
+
+        <!-- COMENTARIOS -->
+        <div class="comentarios-centrado">
+          <button class="btn-mostrar" onclick="mostrarComentarios3()">
+            Mostrar Opiniones
+          </button>
+
+          <div class="mostrar-comentarios">
+            <div class="comentarios" id="contenedor3"></div>
+            <br />
+            <form id="comments3" class="hacer-comentario">
+              <label for="comment" class="label-comentario"
+                >Escribe una opinion</label
+              >
+              <textarea
+                name="comment"
+                id="comment"
+                class="area-comentario"
+                cols="50"
+                rows="5"
+                placeholder="Tu comentario"
+              ></textarea>
+              <button
+                type="submit"
+                class="publicar-comentario"
+                onclick="submitComentario3()"
+              >
+                Publicar
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="ubi-fondo">
+          <i class="gg-pin ubi-icon"></i>
+          <div>
+            <h3 class="ub-titulo">Ubicados en:</h3>
+            <p class="ub-text">
+              Avenida Fundidora y, Adolfo Prieto s/n, Obrera, 64010 Monterrey,
+              N.L.
+            </p>
+            <p class="ub-text">Lunes a domingo 10:00 - 21:30</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carta-lugar busqueda" id="obispado">
+        <div class="lugares-page lug-der">
+          <h3 class="lp-titulo">Obispado</h3>
+          <!-- Encabezado -->
+          <p style="text-align: justify">
+            horno³ es un centro interactivo de ciencia y tecnología y museo del
+            acero, ubicado dentro del Parque Fundidora, específicamente en la
+            estructura original del Alto Horno No.3 de la Compañía Fundidora de
+            Fierro y Acero de Monterrey
+          </p>
+          <p style="text-align: justify">
+            horno3 es un Centro Interactivo de Ciencia y Tecnología, que a
+            través de los fascinantes procesos del acero promueve la educación
+            científica y tecnológica entre niños y jóvenes, cuenta con seis
+            experiencias que hacen al visitante transportarse a la época de
+            operación de la antigua Fundidora, conocer todos los procesos de
+            fabricación del acero a través de interesantes interactivos y
+            adentrarse en el maravilloso mundo del pensamiento científico
+            mediante divertidas demostraciones y experimentos.
+          </p>
+          <hr />
+          <p style="text-align: justify">http://www.horno3.org/</p>
+          <p style="text-align: justify">81 8126 1100</p>
+          <p style="text-align: justify">info@horno3.org</p>
+        </div>
+        <section class="site-img4 inicio"></section>
+
+        <!-- COMENTARIOS -->
+        <div class="comentarios-centrado">
+          <button class="btn-mostrar" onclick="mostrarComentarios4()">
+            Mostrar Opiniones
+          </button>
+
+          <div class="mostrar-comentarios">
+            <div class="comentarios" id="contenedor4"></div>
+            <br />
+            <form id="comments4" class="hacer-comentario">
+              <label for="comment" class="label-comentario"
+                >Escribe una opinion</label
+              >
+              <textarea
+                name="comment"
+                id="comment"
+                class="area-comentario"
+                cols="50"
+                rows="5"
+                placeholder="Tu comentario"
+              ></textarea>
+              <button
+                type="submit"
+                class="publicar-comentario"
+                onclick="submitComentario4()"
+              >
+                Publicar
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="ubi-fondo">
+          <i class="gg-pin ubi-icon"></i>
+          <div>
+            <h3 class="ub-titulo">Ubicados en:</h3>
+            <p class="ub-text">
+              C. Loma Larga 2447, Obispado, 64060 Monterrey, N.L.
+            </p>
+            <p class="ub-text">Lunes a domingo 10:00 - 22:00</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,1253 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+/*GENERALES*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* Reset para rems 62.5% = 10px */
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  /* Cambio de fuente */
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: #588157;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+/* HEADER */
+.site-header.inicio {
+  background-image: url(./../assets/fondo.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.inicio {
+  /* TITULO HEADER */
+  /* botones de la barra de navegacion*/
+}
+
+.inicio .titulo-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #262626;
+  padding-left: 25px;
+}
+
+.inicio .titulo-header .titulo-text {
+  margin-left: 20px;
+}
+
+.inicio .titulo-header .name {
+  color: aliceblue;
+  font-family: Calibri;
+}
+
+.inicio .bar {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.inicio .title-lugares {
+  color: white;
+  max-width: 100rem;
+  padding-left: 20px;
+  line-height: 2;
+  font-size: 3.4rem;
+  margin: 3rem 0 0 60rem;
+  background-color: #4e704d;
+  -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4));
+}
+
+.inicio .title-lugares h2 {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+/* BARRA DE INICIO */
+.back-barra {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5px;
+  background-color: rgba(33, 33, 33, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.back-barra .disenonav {
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: Calibri;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  background: none;
+  border: none;
+}
+
+.back-barra .disenonav:hover {
+  background: #588157;
+}
+
+.back-barra #btn-sus {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: initial;
+}
+
+.back-barra #btn-desus {
+  display: none;
+}
+
+.back-barra .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.back-barra .search p {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: Calibri;
+}
+
+.back-barra .search input {
+  margin: 20px 5px 30px 30px;
+  padding: 10px;
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: white;
+}
+
+.back-barra .search input:focus {
+  outline: none;
+}
+
+.back-barra .search:hover input {
+  border: 2px solid #588157;
+}
+
+.back-barra .search .gg-search {
+  margin-top: 30px;
+  margin-left: 5px;
+  color: white;
+}
+
+.back-barra .registro {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.back-barra.nav-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.principal-index {
+  position: relative;
+}
+
+.principal-index .site-section.inicio {
+  background-image: url(./../assets/centromty.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 40rem;
+  margin: 100px 0;
+}
+
+/* LUGARES */
+.cartas-lugares {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(350px, 4.2rem))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 4.2rem));
+  gap: 1rem;
+  line-height: normal;
+}
+
+.cartas-lugares .carta {
+  width: 350px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(231, 224, 212, 0.9);
+}
+
+.cartas-lugares .carta img {
+  border-radius: 10px 10px 0 0;
+  width: 350px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cartas-lugares .carta .titulos-carta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.cartas-lugares .carta .desc-carta {
+  color: black;
+  padding: 0.2rem 0.5rem;
+}
+
+.cartas-lugares .carta .desc-carta:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.cartas-lugares .carta .comentarios-centrado {
+  padding: 0.2rem 0.5rem;
+}
+
+.cartas-lugares .carta .comentarios-centrado .btn-mostrar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-size: 15px;
+  color: black;
+  margin-top: 0.5rem;
+}
+
+.cartas-lugares .carta .comentarios-centrado .btn-mostrar:hover {
+  text-decoration: underline;
+}
+
+.cartas-lugares .carta .comentarios-centrado .comentarios {
+  max-height: 15rem;
+  overflow-y: scroll;
+}
+
+.cartas-lugares .carta .comentarios-centrado .comentarios .card {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.cartas-lugares .carta .comentarios-centrado .area-comentario {
+  border-radius: 5px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.cartas-lugares .carta .comentarios-centrado .publicar-comentario {
+  background: #01161e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.cartas-lugares .carta textarea {
+  background: rgba(243, 239, 233, 0.9);
+  padding: 1rem;
+}
+
+.diseno-tabla {
+  text-align: center;
+  color: aliceblue;
+  font-family: Calibri;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 4.2rem))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 4.2rem));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 1.5rem;
+  max-width: 1000px;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  margin: 0 auto;
+}
+
+.diseno-tabla .carta {
+  -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.diseno-tabla .carta .titulos {
+  background-color: #01161e;
+  color: white;
+  font-size: 20px;
+  border-radius: 0 0 15px 15px;
+  margin: 0;
+  margin-top: -1.1rem;
+}
+
+.diseno-tabla .carta .imagenes {
+  height: 200px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  cursor: context-menu;
+}
+
+.diseno-tabla .carta:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/* CARTA SAL DE TU ZONA */
+.encabezado {
+  color: white;
+  max-width: 100rem;
+  padding: 0 20px;
+  line-height: 2;
+  font-size: 2.8rem;
+  background-color: rgba(169, 156, 136, 0.9);
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+}
+
+.encabezado h1 {
+  margin: 0;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.encabezado p {
+  margin: -20px 0 0 0;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* QUIENES SOMOS */
+.sobre-nosotros {
+  padding: 10px 50px;
+  background-color: #a99c88;
+  width: 60rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+}
+
+.sobre-nosotros .sn-titulo {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 3.5rem;
+  font-style: italic;
+}
+
+.sobre-nosotros .sn-text {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* FIN INDEX */
+/* CARTA DEL LUGAR */
+.carta-lugar {
+  display: block;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+  margin-top: 20rem;
+  /* UBICACION DEL LUGAR */
+  /* IMAGENES DE LOS LUGARES */
+}
+
+.carta-lugar:first-child {
+  margin-top: 0;
+}
+
+.carta-lugar .lugares-page {
+  padding: 10px 50px;
+  border-radius: 10px;
+  background-color: rgba(169, 156, 136, 0.9);
+  width: 50rem;
+  -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+  margin-top: -5rem;
+}
+
+.carta-lugar .lugares-page .lp-titulo {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.carta-lugar .lugares-page hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  margin: 1.5rem 0;
+}
+
+.carta-lugar .lug-izq {
+  float: left;
+  margin-left: 30px;
+}
+
+.carta-lugar .lug-der {
+  float: right;
+  margin-right: 30px;
+}
+
+.carta-lugar .ubi-fondo {
+  background-color: #212121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 15rem;
+}
+
+.carta-lugar .ubi-fondo .ubi-icon {
+  color: white;
+  -webkit-transform: rotate(45deg) scale(var(--ggs, 3)) !important;
+          transform: rotate(45deg) scale(var(--ggs, 3)) !important;
+}
+
+.carta-lugar .ubi-fondo .ub-titulo {
+  text-align: left;
+  text-transform: uppercase;
+  color: white;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.carta-lugar .ubi-fondo .ub-text {
+  color: white;
+}
+
+.carta-lugar .btn-mostrar {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+  background: #212121;
+  color: white;
+}
+
+.carta-lugar .comentarios-centrado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.carta-lugar .mostrar-comentarios {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+.carta-lugar .mostrar-comentarios .hacer-comentario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.carta-lugar .mostrar-comentarios .hacer-comentario .label-comentario {
+  color: white;
+  font-size: 15px;
+}
+
+.carta-lugar .mostrar-comentarios .hacer-comentario .area-comentario {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.carta-lugar .mostrar-comentarios .hacer-comentario .publicar-comentario {
+  background: #a99c88;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.carta-lugar .mostrar-comentarios .hacer-comentario .publicar-comentario:hover {
+  background: #beb09a;
+}
+
+.carta-lugar .mostrar-comentarios .comentarios {
+  background: white;
+  border-radius: 10px;
+  max-width: 600px;
+  -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+  max-height: 30rem;
+  overflow-y: scroll;
+}
+
+.carta-lugar .mostrar-comentarios .comentarios .card {
+  padding: 1rem;
+}
+
+.carta-lugar .mostrar-comentarios .comentarios .card .card-body .card-title {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.carta-lugar .mostrar-comentarios .comentarios .card .card-body .card-text {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.carta-lugar .site-img.inicio {
+  background-image: url(./../assets/fundi.jpg);
+  background-position: center center;
+  background-size: contain;
+  height: 300px;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.carta-lugar .site-img2.inicio {
+  background-image: url(./../assets/bosque.jpg);
+  background-position: center center;
+  background-size: contain;
+  height: 300px;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.carta-lugar .site-img3.inicio {
+  background-image: url(./../assets/rio.jpg);
+  background-position: center center;
+  background-size: contain;
+  height: 300px;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.carta-lugar .site-img4.inicio {
+  background-image: url(./../assets/obispado.jpg);
+  background-position: center center;
+  background-size: contain;
+  height: 300px;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.busqueda {
+  margin-top: 0;
+}
+
+/* FIN DE LUGARES */
+/* FORM REGISTRO */
+.form-registro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4rem 0;
+  gap: 5rem;
+  /* CARTA POR QUE UNIRTE */
+  /* DATOS DEL USUARIO */
+}
+
+.form-registro .form-info {
+  width: 40rem;
+  padding: 20px 50px;
+  background-color: #a99c88;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+}
+
+.form-registro .form-info .sn-titulo {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.form-registro .form-info .sn-text {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.form-registro .form-info .sn-text2 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.form-registro .form-form {
+  width: 100%;
+  background: #212123;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+}
+
+.form-registro .form-form .form-content {
+  padding: 10px 25px;
+}
+
+.form-registro .form-form .form-content .class-legend {
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.form-registro .form-form .form-content .form-llenar {
+  display: -ms-grid;
+  display: grid;
+}
+
+.form-registro .form-form .form-content .form-label {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.form-registro .form-form .form-content input {
+  height: 3.5rem;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.form-registro .form-form .form-content .btn-registro {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #588157;
+  border: none;
+  font-size: 23px;
+  color: white;
+  padding: 10px;
+  -webkit-transition-duration: 0.4s;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.form-registro .form-form .form-content .btn-registro:hover {
+  background-color: #6ba16a;
+}
+
+.form-registro .form-form .form-content hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 1.5rem 0;
+}
+
+.form-registro .form-form .form-content .no-cuenta .registro-text {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.form-registro .form-form .form-content .no-cuenta .btn-inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #a99c88;
+  border: none;
+  font-size: 23px;
+  color: white;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s;
+  border-radius: 10px;
+}
+
+.form-registro .form-form .form-content .no-cuenta .btn-inicio:hover {
+  background-color: #beb09a;
+}
+
+/* FIN FORM REGISTRO */
+/* FORM LOGIN */
+.form-login {
+  margin: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-login .form-form {
+  width: 100%;
+  background: #212123;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+}
+
+.form-login .form-form .form-content {
+  padding: 10px 25px;
+}
+
+.form-login .form-form .form-content .class-legend {
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.form-login .form-form .form-content .form-llenar2 {
+  display: -ms-grid;
+  display: grid;
+  padding-bottom: 20px;
+}
+
+.form-login .form-form .form-content .form-llenar2 .form-label {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.form-login .form-form .form-content .form-llenar2 input {
+  height: 3.5rem;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.form-login .form-form .form-content .btn-registro {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #588157;
+  border: none;
+  font-size: 23px;
+  color: white;
+  padding: 10px;
+  -webkit-transition-duration: 0.4s;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.form-login .form-form .form-content .btn-registro:hover {
+  background-color: #6ba16a;
+}
+
+.form-login .form-form .no-cuenta {
+  margin-top: 2rem;
+}
+
+.form-login .form-form .no-cuenta .registro-text {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.form-login .form-form .no-cuenta .btn-inicio {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #a99c88;
+  border: none;
+  font-size: 23px;
+  color: white;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s;
+  border-radius: 10px;
+}
+
+.form-login .form-form .no-cuenta .btn-inicio:hover {
+  background-color: #beb09a;
+}
+
+.form-login .form-form a {
+  text-decoration: none;
+}
+
+.form-login .form-form a .texto-olvido {
+  text-align: center;
+  color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.form-login .form-form a .texto-olvido:hover {
+  text-decoration: underline;
+}
+
+.lp-text {
+  color: white;
+  font-size: 2rem;
+}
+
+.carta-recuperacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #212123;
+  max-width: 50rem;
+  margin: 5rem auto;
+  border-radius: 10px;
+  color: white;
+  padding: 2rem;
+}
+
+.carta-recuperacion .cuerpo-recuperacion {
+  margin-bottom: 2rem;
+}
+
+.carta-recuperacion .cuerpo-recuperacion label {
+  font-size: 17px;
+}
+
+.carta-recuperacion .cuerpo-recuperacion input {
+  width: 100%;
+  font-size: 15px;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.carta-recuperacion .botones-recuperacion {
+  font-weight: 700;
+}
+
+.carta-recuperacion .botones-recuperacion a {
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  background: rgba(169, 156, 136, 0.9);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-right: 1rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.carta-recuperacion .botones-recuperacion a:hover {
+  background: #beb09a;
+}
+
+.carta-recuperacion .botones-recuperacion button {
+  font-weight: 700;
+  font-size: 16px;
+  background: #588157;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 1.1rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.carta-recuperacion .botones-recuperacion button:hover {
+  background: #6ba16a;
+}
+
+.sus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.sus button {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  background: #a99c88;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  color: white;
+}
+
+.sus button:hover {
+  background: #beb09a;
+}
+
+@media only screen and (max-width: 920px) {
+  /* HEADER */
+  /* BARRA DE INICIO */
+  .back-barra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 0;
+    display: none;
+  }
+  .back-barra .disenonav {
+    display: inline-block;
+    color: white;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    background: none;
+    border: none;
+  }
+  .back-barra .disenonav:hover {
+    background: #588157;
+  }
+  .back-barra #btn-sus {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: initial;
+    padding: 0 2rem;
+  }
+  .back-barra #btn-desus {
+    display: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: initial;
+    padding: 0 2rem;
+  }
+  .back-barra .search {
+    display: none;
+  }
+  .back-barra .search p {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Calibri;
+  }
+  .back-barra .search input {
+    margin: 20px 5px 30px 30px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+  }
+  .back-barra .search input:focus {
+    outline: none;
+  }
+  .back-barra .search:hover input {
+    border: 2px solid #588157;
+  }
+  .back-barra .search .gg-search {
+    margin-top: 30px;
+    margin-left: 5px;
+    color: white;
+  }
+  .back-barra .registro {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  /* TITULOS */
+  .inicio {
+    /* TITULO HEADER */
+    /* botones de la barra de navegacion*/
+  }
+  .inicio .titulo-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #262626;
+    padding-left: 25px;
+  }
+  .inicio .titulo-header .titulo-text {
+    margin-left: 20px;
+  }
+  .inicio .titulo-header .name {
+    color: aliceblue;
+  }
+  .inicio .bar {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .inicio .title-lugares {
+    max-width: 100rem;
+    width: 30rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+  .inicio .title-lugares h2 {
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+  }
+  /* BODY */
+  /* CARTA SAL DE TU ZONA */
+  .encabezado {
+    max-width: 100rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+  }
+  .encabezado h1 {
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .encabezado p {
+    margin-top: 0.5rem;
+  }
+  /* QUIENES SOMOS */
+  .sobre-nosotros {
+    padding: 20px;
+    max-width: 100rem;
+    width: 90%;
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border-radius: 10px;
+  }
+  .sobre-nosotros .sn-titulo {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3.5rem;
+    font-style: italic;
+  }
+  .sobre-nosotros .sn-text {
+    color: white;
+    font-size: 1.5rem;
+  }
+  /* FOTO QUIENES SOMOS*/
+  .site-section.inicio {
+    position: relative;
+    bottom: 30rem;
+    z-index: -1;
+  }
+  /* REGISTRO */
+  .form-registro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-registro .form-info {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .form-registro .form-form {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .carta-recuperacion {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  /* Hamburgesa */
+  .burger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    cursor: pointer;
+    z-index: 1500;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+  .burger div {
+    background-color: white;
+    border-radius: 10px;
+    width: 35px;
+    height: 3px;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  /* TRANSFORMACION de la hamburgesa */
+  .toggle .line1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 5px);
+            transform: rotate(-45deg) translate(-6px, 5px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -5px);
+            transform: rotate(45deg) translate(-6px, -5px);
+  }
+  /* ANIMACION */
+  @-webkit-keyframes navLinkFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(30px);
+              transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(30px);
+              transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

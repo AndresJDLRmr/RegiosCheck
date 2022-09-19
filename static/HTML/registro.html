@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regios Check</title>
+    <link rel="stylesheet" href="./../CSS/estilo.css" />
+    <link href="https://unpkg.com/css.gg/icons/all.css" rel="stylesheet" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+    <script src="./../JS/script.js" async></script>
+  </head>
+  <body>
+    <!--barra de navegacion-->
+    <header class="inicio">
+      <!--barra de navegacion-->
+      <div class="titulo-header">
+        <img src="./../assets/logo.png" class="bar" />
+        <h1 class="name titulo-text">Regios Check</h1>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+
+      <nav class="back-barra">
+        <a href="Inicio.html" class="disenonav">Inicio</a>
+        <a href="lugares.html" class="disenonav">Lugares</a>
+        <div class="search">
+          <input
+            type="search"
+            name="busqueda"
+            placeholder="Buscar"
+            onclick="window.location.href='lugares.html'"
+          />
+          <i class="gg-search"></i>
+        </div>
+        <a href="registro.html" class="disenonav registro" id="registrar-ses">
+          Registrarse
+        </a>
+        <a href="iniciarSesion.html" class="disenonav registro" id="abrir-ses"
+          >Iniciar Sesion</a
+        >
+        <a class="disenonav registro" id="cerrar-ses" onclick="logout()">
+          Cerrar Sesion
+        </a>
+      </nav>
+      <div class="title-lugares">
+        <h2>¡REGISTRATE!</h2>
+      </div>
+    </header>
+
+    <main>
+      <div class="form-registro">
+        <div class="form-info">
+          <h3 class="sn-titulo">¿Por que unirte?</h3>
+          <p class="sn-text2">
+            El unirte a la página te permite poder dar tu opinión sobre los
+            diferentes lugares que visitas, para que así la comunidad vea las
+            diferentes experiencias vividas y se animen a salir a visitar.
+          </p>
+          <p class="sn-text2">
+            Además te da la posibilidad de poder suscribirte para tener
+            recomendaciones semanales sobre que nuevos lugares los cuales puedes
+            visitar.
+          </p>
+        </div>
+
+        <div>
+          <form class="form-form">
+            <div class="form-content">
+              <!-- Agrupa campos del formulario  -->
+              <legend class="class-legend">Registro:</legend>
+              <!-- Titulo del fieldset -->
+              <div class="form-llenar">
+                <label class="form-label" for="nombre">
+                  Nombre de usuario:
+                </label>
+                <input
+                  type="text"
+                  id="nombre"
+                  placeholder="Tu nombre"
+                  required
+                />
+                <!-- Cuadro de texto Placeholder es como la sombra en donde debemos poner el texto -->
+              </div>
+
+              <div class="form-llenar">
+                <label class="form-label" for="email">
+                  Correo electronico:
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="corre0@gmail.com"
+                  required
+                />
+              </div>
+
+              <div class="form-llenar">
+                <label class="form-label" for="telefono">
+                  Confirmacion de correo electronico:
+                </label>
+                <input
+                  type="email"
+                  id="confirEmail"
+                  placeholder="corre0@gmail.com"
+                  required
+                />
+              </div>
+
+              <div class="form-llenar">
+                <label class="form-label" for="mensaje"> Contraseña: </label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Tu contraseña"
+                  required
+                />
+              </div>
+
+              <div class="form-llenar">
+                <label class="form-label" for="mensaje">
+                  Confirmacion de contraseña:
+                </label>
+                <input
+                  type="password"
+                  id="confirPasssword"
+                  placeholder="Tu contraseña"
+                  required
+                />
+              </div>
+
+              <button onclick="signUp()" class="btn-registro" type="button">
+                Registrar
+              </button>
+              <hr />
+              <div class="no-cuenta">
+                <p class="registro-text">¿Ya tienes una cuenta?</p>
+                <a href="iniciarSesion.html" class="btn-inicio">
+                  Iniciar Sesion
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

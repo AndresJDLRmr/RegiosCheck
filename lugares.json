@@ -1,0 +1,230 @@
+[
+  {
+    "question": "¿Qué lugar puedo visitar en Monterrey?",
+    "answers": [
+      "La Papanteca Fonda Jarocha, Ubicado en Lincoln 4600 Col. valle de las mitras, Monterrey, Nuevo Leon",
+      "Taqueria Calderas, Ubicado en Plaza TEC Local 19 Planta Alta - Av. del Estado No. 215, Col. Tecnologico, Monterrey NL",
+      "SelfieLandmx, Ubicado en Museo de la selfie, Selfieland, 64989 Monterrey, Nuevo Leon, Mexico",
+      "Museo de Historia Mexicana, Ubicado en Dr Jose Ma. Coss 445, Centro, 64000 Monterrey, N.L",
+      "Museo del Acero horno 3, Ubicado en Av. Fundidora Parque, Fundidora, 64010 Monterrey, N.L.",
+      "Museo Metropolitano De Monterrey, Ubicado en Ignacio Zaragoza, Corregidora &, Centro, 64720 Monterrey, N.L.",
+      "Museo de Arte Contemporaneo de Monterrey, Ubicado en Juan Zuazua, Padre Raymundo Jardón y, Centro, 64000 Monterrey, N.L.",
+      "Rayland Party, Ubicado en Av. Paseo de los Leones # 100 Col. Cumbres Elite, 7 sector",
+      "Paseo Santa Lucia, Ubicado en Santa Lucia, Centro, 64000 Monterrey, N.L.",
+      "Parque Fundidora, Ubicado en Avenida Fundidora y, Adolfo Prieto S/N, Obrera, 64010 Monterrey, N.L.",
+      "Parque Natural La Estanzuela Monterrey, Ubicado en Camino, Antiguo Camino a Valle Alto S/N, La Estanzuela, 64780 Monterrey, N.L."
+    ]
+  },
+  {
+    "question": "lugar para visitar en Monterrey?",
+    "answers": [
+      "La Papanteca Fonda Jarocha, Ubicado en Lincoln 4600 Col. valle de las mitras, Monterrey, Nuevo Leon",
+      "Taqueria Calderas, Ubicado en Plaza TEC Local 19 Planta Alta - Av. del Estado No. 215, Col. Tecnologico, Monterrey NL",
+      "SelfieLandmx, Ubicado en Museo de la selfie, Selfieland, 64989 Monterrey, Nuevo Leon, Mexico",
+      "Museo de Historia Mexicana, Ubicado en Dr Jose Ma. Coss 445, Centro, 64000 Monterrey, N.L",
+      "Museo del Acero horno 3, Ubicado en Av. Fundidora Parque, Fundidora, 64010 Monterrey, N.L.",
+      "Museo Metropolitano De Monterrey, Ubicado en Ignacio Zaragoza, Corregidora &, Centro, 64720 Monterrey, N.L.",
+      "Museo de Arte Contemporaneo de Monterrey, Ubicado en Juan Zuazua, Padre Raymundo Jardón y, Centro, 64000 Monterrey, N.L.",
+      "Rayland Party, Ubicado en Av. Paseo de los Leones # 100 Col. Cumbres Elite, 7 sector",
+      "Paseo Santa Lucia, Ubicado en Santa Lucia, Centro, 64000 Monterrey, N.L.",
+      "Parque Fundidora, Ubicado en Avenida Fundidora y, Adolfo Prieto S/N, Obrera, 64010 Monterrey, N.L.",
+      "Parque Natural La Estanzuela Monterrey, Ubicado en Camino, Antiguo Camino a Valle Alto S/N, La Estanzuela, 64780 Monterrey, N.L."
+    ]
+  },
+  {
+    "question": "¿Qué lugar puedo visitar en San Pedro Garza Garcia?",
+    "answers": [
+      "Morelia Gourmet Paletas, Ubicado en Plaza rocallosos, calle sierra nevada #219, Colonia San Agustin, San Pedro Garza Garcia, Nuevo Leon",
+      "Parque Ecologico Chipinque, Ubicado en Carretera a Chipinque Km. 2.5, Valle de San Angel, 66290 San Pedro Garza Garcia, N.L."
+    ]
+  },
+  {
+    "question": "lugar para visitar en San Pedro Garza Garcia?",
+    "answers": [
+      "Morelia Gourmet Paletas, Ubicado en Plaza rocallosos, calle sierra nevada #219, Colonia San Agustin, San Pedro Garza Garcia, Nuevo Leon",
+      "Parque Ecologico Chipinque, Ubicado en Carretera a Chipinque Km. 2.5, Valle de San Angel, 66290 San Pedro Garza Garcia, N.L."
+    ]
+  },
+  {
+    "question": "¿Qué lugar puedo visitar en Guadalupe?",
+    "answers": [
+      "Zona Uno, Ubicado en Santa Lucia 749, 66495 Guadalupe, Nuevo Leon"
+    ]
+  },
+  {
+    "question": "lugar para visitar en Guadalupe?",
+    "answers": [
+      "Zona Uno, Ubicado en Santa Lucia 749, 66495 Guadalupe, Nuevo Leon"
+    ]
+  },
+  {
+    "question": "¿Qué lugar puedo visitar en San Nicolas de los Garza?",
+    "answers": [
+      "Dolce Amore Frappe, Ubicado en Av. Felix Galvan 132 cerca de Paseo la fe, San Nicolas de los Garza, Nuevo Leon"
+    ]
+  },
+  {
+    "question": "lugar para visitar en San Nicolas de los Garza?",
+    "answers": [
+      "Dolce Amore Frappe, Ubicado en Av. Felix Galvan 132 cerca de Paseo la fe, San Nicolas de los Garza, Nuevo Leon"
+    ]
+  },
+  {
+    "question": "¿Qué lugar puedo visitar en San Nicolas de los Garza?",
+    "answers": [
+      "Bioparque Estrella, Ubicado en Rayon Km. 9, 64700 Montemorelos, N.L."
+    ]
+  },
+  {
+    "question": "lugar para visitar en San Nicolas de los Garza?",
+    "answers": [
+      "Bioparque Estrella, Ubicado en Rayon Km. 9, 64700 Montemorelos, N.L."
+    ]
+  },
+  {
+    "question": "¿Qué lugar puedo ir a comer?",
+    "answers": [
+      "La Papanteca Fonda Jarocha, Ubicado en Lincoln 4600 Col. valle de las mitras, Monterrey, Nuevo Leon",
+      "Zona Uno, Ubicado en Santa Lucia 749, 66495 Guadalupe, Nuevo Leon",
+      "Morelia Gourmet Paletas, Ubicado en Plaza rocallosos, calle sierra nevada #219, Colonia San Agustin, San Pedro Garza Garcia, Nuevo Leon",
+      "Dolce Amore Frappe, Ubicado en Av. Félix Galván 132 cerca de Paseo la fe, San Nicolas de los Garza, Nuevo Leon",
+      "Taqueria Calderas, Ubicado en Plaza TEC Local 19 Planta Alta - Av. del Estado No. 215, Col. Tecnologico, Monterrey NL"
+    ]
+  },
+  {
+    "question": "lugar para ir a comer?",
+    "answers": [
+      "La Papanteca Fonda Jarocha, Ubicado en Lincoln 4600 Col. valle de las mitras, Monterrey, Nuevo Leon",
+      "Zona Uno, Ubicado en Santa Lucia 749, 66495 Guadalupe, Nuevo Leon",
+      "Morelia Gourmet Paletas, Ubicado en Plaza rocallosos, calle sierra nevada #219, Colonia San Agustin, San Pedro Garza Garcia, Nuevo Leon",
+      "Dolce Amore Frappe, Ubicado en Av. Félix Galván 132 cerca de Paseo la fe, San Nicolas de los Garza, Nuevo Leon",
+      "Taqueria Calderas, Ubicado en Plaza TEC Local 19 Planta Alta - Av. del Estado No. 215, Col. Tecnologico, Monterrey NL"
+    ]
+  },
+  {
+    "question": "¿Qué parques puedo visitar?",
+    "answers": [
+      "Bioparque Estrella, Ubicado en Rayon Km. 9, 64700 Montemorelos, N.L.",
+      "Parque Ecologico Chipinque, Ubicado en Carretera a Chipinque Km. 2.5, Valle de San Angel, 66290 San Pedro Garza Garcia, N.L.",
+      "Paseo Santa Lucia, Ubicado en Santa Lucia, Centro, 64000 Monterrey, N.L.",
+      "Parque Fundidora, Ubicado en Avenida Fundidora y, Adolfo Prieto S/N, Obrera, 64010 Monterrey, N.L.",
+      "Parque Natural La Estanzuela Monterrey, Ubicado en Camino, Antiguo Camino a Valle Alto S/N, La Estanzuela, 64780 Monterrey, N.L."
+    ]
+  },
+  {
+    "question": "parques para visitar?",
+    "answers": [
+      "Bioparque Estrella, Ubicado en Rayon Km. 9, 64700 Montemorelos, N.L.",
+      "Parque Ecologico Chipinque, Ubicado en Carretera a Chipinque Km. 2.5, Valle de San Angel, 66290 San Pedro Garza Garcia, N.L.",
+      "Paseo Santa Lucia, Ubicado en Santa Lucia, Centro, 64000 Monterrey, N.L.",
+      "Parque Fundidora, Ubicado en Avenida Fundidora y, Adolfo Prieto S/N, Obrera, 64010 Monterrey, N.L.",
+      "Parque Natural La Estanzuela Monterrey, Ubicado en Camino, Antiguo Camino a Valle Alto S/N, La Estanzuela, 64780 Monterrey, N.L."
+    ]
+  },
+  {
+    "question": "¿Qué museos puedo visitar?",
+    "answers": [
+      "Museo del Acero horno 3, Ubicado en Av. Fundidora Parque, Fundidora, 64010 Monterrey, N.L.",
+      "Museo Metropolitano De Monterrey, Ubicado en Ignacio Zaragoza, Corregidora &, Centro, 64720 Monterrey, N.L.",
+      "Museo de Arte Contemporaneo de Monterrey, Ubicado en Juan Zuazua, Padre Raymundo Jardon y, Centro, 64000 Monterrey, N.L.",
+      "Museo de Historia Mexicana, Ubicado en Dr Jose Ma. Coss 445, Centro, 64000 Monterrey, N.L"
+    ]
+  },
+  {
+    "question": "museos para visitar?",
+    "answers": [
+      "Museo del Acero horno 3, Ubicado en Av. Fundidora Parque, Fundidora, 64010 Monterrey, N.L.",
+      "Museo Metropolitano De Monterrey, Ubicado en Ignacio Zaragoza, Corregidora &, Centro, 64720 Monterrey, N.L.",
+      "Museo de Arte Contemporaneo de Monterrey, Ubicado en Juan Zuazua, Padre Raymundo Jardon y, Centro, 64000 Monterrey, N.L.",
+      "Museo de Historia Mexicana, Ubicado en Dr Jose Ma. Coss 445, Centro, 64000 Monterrey, N.L"
+    ]
+  },
+  {
+    "question": "¿Qué lugar puedo ir a comer en Monterrey?",
+    "answers": [
+      "La Papanteca — Fonda Jarocha, Ubicado en Lincoln 4600 Col. valle de las mitras, Monterrey, Nuevo Leon",
+      "Taqueria Calderas, Ubicado en Plaza TEC Local 19 Planta Alta - Av. del Estado No. 215, Col. Tecnologico, Monterrey NL"
+    ]
+  },
+  {
+    "question": "lugar para comer en Monterrey?",
+    "answers": [
+      "La Papanteca — Fonda Jarocha, Ubicado en Lincoln 4600 Col. valle de las mitras, Monterrey, Nuevo Leon",
+      "Taqueria Calderas, Ubicado en Plaza TEC Local 19 Planta Alta - Av. del Estado No. 215, Col. Tecnologico, Monterrey NL"
+    ]
+  },
+  {
+    "question": "¿Qué museos hay en Monterrey?",
+    "answers": [
+      "Museo del Acero horno 3, Ubicado en Av. Fundidora Parque, Fundidora, 64010 Monterrey, N.L.",
+      "Museo Metropolitano De Monterrey, Ubicado en Ignacio Zaragoza, Corregidora &, Centro, 64720 Monterrey, N.L.",
+      "Museo de Arte Contemporaneo de Monterrey, Ubicado en Juan Zuazua, Padre Raymundo Jardon y, Centro, 64000 Monterrey, N.L.",
+      "Museo de Historia Mexicana, Ubicado en Dr Jose Ma. Coss 445, Centro, 64000 Monterrey, N.L"
+    ]
+  },
+  {
+    "question": "museos en Monterrey?",
+    "answers": [
+      "Museo del Acero horno 3, Ubicado en Av. Fundidora Parque, Fundidora, 64010 Monterrey, N.L.",
+      "Museo Metropolitano De Monterrey, Ubicado en Ignacio Zaragoza, Corregidora &, Centro, 64720 Monterrey, N.L.",
+      "Museo de Arte Contemporaneo de Monterrey, Ubicado en Juan Zuazua, Padre Raymundo Jardon y, Centro, 64000 Monterrey, N.L.",
+      "Museo de Historia Mexicana, Ubicado en Dr Jose Ma. Coss 445, Centro, 64000 Monterrey, N.L"
+    ]
+  },
+  {
+    "question": "¿Qué parques hay en Monterrey?",
+    "answers": [
+      "Paseo Santa Lucia, Ubicado en Santa Lucia, Centro, 64000 Monterrey, N.L.",
+      "Parque Fundidora, Ubicado en Avenida Fundidora y, Adolfo Prieto S/N, Obrera, 64010 Monterrey, N.L.",
+      "Parque Natural La Estanzuela Monterrey, Ubicado en Camino, Antiguo Camino a Valle Alto S/N, La Estanzuela, 64780 Monterrey, N.L."
+    ]
+  },
+  {
+    "question": "parques en Monterrey?",
+    "answers": [
+      "Paseo Santa Lucia, Ubicado en Santa Lucia, Centro, 64000 Monterrey, N.L.",
+      "Parque Fundidora, Ubicado en Avenida Fundidora y, Adolfo Prieto S/N, Obrera, 64010 Monterrey, N.L.",
+      "Parque Natural La Estanzuela Monterrey, Ubicado en Camino, Antiguo Camino a Valle Alto S/N, La Estanzuela, 64780 Monterrey, N.L."
+    ]
+  },
+  {
+    "question": "Hola",
+    "answers": [
+      "Hola, ¿Cual es su duda?",
+      "Saludos, ¿Que se le ofrece?",
+      "Buenas, ¿tiene alguna cuestion?"
+    ]
+  },
+  {
+    "question": "Buenos dias",
+    "answers": [
+      "Hola, ¿tiene alguna cuestion?",
+      "Saludos, ¿Cual es su duda?",
+      "Buenos dias, ¿Que se le ofrece?"
+    ]
+  },
+  {
+    "question": "Buenas tardes",
+    "answers": [
+      "Hola, ¿Que se le ofrece?",
+      "Saludos, ¿tiene alguna cuestion?",
+      "Buenas tardes, ¿Cual es su duda?"
+    ]
+  },
+  {
+    "question": "Buenas noches",
+    "answers": [
+      "Hola, ¿Cual es su duda?",
+      "Saludos, ¿tiene alguna cuestion?",
+      "Buenas noches, ¿Que se le ofrece?"
+    ]
+  },
+  {
+    "question": "Buenas",
+    "answers": [
+      "Hola, ¿tiene alguna cuestion?",
+      "Buenas, ¿Que se le ofrece?",
+      "Saludos, ¿Cual es su duda?"
+    ]
+  }
+]

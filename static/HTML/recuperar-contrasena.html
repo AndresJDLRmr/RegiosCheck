@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regios Check</title>
+    <link rel="stylesheet" href="./../CSS/estilo.css" />
+    <link href="https://unpkg.com/css.gg/icons/all.css" rel="stylesheet" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+    <script src="./../JS/script.js" async></script>
+  </head>
+  <body>
+    <!--barra de navegacion-->
+    <header class="inicio">
+      <!--barra de navegacion-->
+      <div class="titulo-header">
+        <img src="./../assets/logo.png" class="bar" />
+        <h1 class="name titulo-text">Regios Check</h1>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+
+      <nav class="back-barra">
+        <a href="Inicio.html" class="disenonav">Inicio</a>
+        <a href="lugares.html" class="disenonav">Lugares</a>
+        <div class="search">
+          <input
+            type="search"
+            name="busqueda"
+            placeholder="Buscar"
+            onclick="window.location.href='lugares.html'"
+          />
+          <i class="gg-search"></i>
+        </div>
+        <a href="registro.html" class="disenonav registro" id="registrar-ses">
+          Registrarse
+        </a>
+        <a href="iniciarSesion.html" class="disenonav registro" id="abrir-ses"
+          >Iniciar Sesion</a
+        >
+        <a class="disenonav registro" id="cerrar-ses" onclick="logout()">
+          Cerrar Sesion
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="carta-recuperacion">
+        <div class="titulo-recuperacion">
+          <h2>¿Olvidaste tu contraseña?</h2>
+        </div>
+        <div class="cuerpo-recuperacion">
+          <label for="email"
+            >Ingresa tu correo para poder recuperar tu cuenta.
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Correo Electrónico"
+          />
+        </div>
+        <div class="botones-recuperacion">
+          <a href="./iniciarSesion.html">Cancelar</a>
+          <button id="btn-resetPassword" onclick="resetPassword()">
+            Ingresar
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

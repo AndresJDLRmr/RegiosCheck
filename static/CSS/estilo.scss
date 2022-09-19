@@ -1,0 +1,858 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+/*GENERALES*/
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* Reset para rems 62.5% = 10px */
+}
+
+body {
+  font-family: "Nunito", sans-serif; /* Cambio de fuente */
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: $principal;
+}
+
+h2 {
+  text-align: center;
+  color: $letra-clara;
+  font-size: 30px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-align: center;
+  color: $letra-clara;
+  font-size: 20px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+/* HEADER */
+.site-header.inicio {
+  background-image: url(./../assets/fondo.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  //min-height: 60rem;
+}
+
+.inicio {
+  /* TITULO HEADER */
+  .titulo-header {
+    display: flex;
+    align-items: center;
+    background-color: #262626;
+    padding-left: 25px;
+
+    .titulo-text {
+      margin-left: 20px;
+    }
+
+    .name {
+      color: $letra-lugares;
+      font-family: Calibri;
+    }
+  }
+
+  /* botones de la barra de navegacion*/
+  .bar {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+
+  .title-lugares {
+    color: $letra-clara;
+    max-width: 100rem;
+    padding-left: 20px;
+    line-height: 2;
+    font-size: 3.4rem;
+    margin: 3rem 0 0 60rem;
+    background-color: rgb(78, 112, 77);
+    filter: drop-shadow($sombra-fuerte);
+
+    & h2 {
+      margin-block-end: 0;
+    }
+  }
+}
+
+/* BARRA DE INICIO */
+.back-barra {
+  height: fit-content;
+  padding: 5px;
+  background-color: $fondo-barra;
+  display: flex;
+  gap: 1rem;
+
+  .disenonav {
+    display: inline-block;
+    color: $letra-clara;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+    background: none;
+    border: none;
+
+    &:hover {
+      background: rgb(88, 129, 87);
+    }
+  }
+
+  #btn-sus {
+    justify-content: flex-start;
+    text-align: initial;
+  }
+
+  #btn-desus {
+    display: none;
+  }
+
+  .search {
+    display: flex;
+
+    p {
+      color: $letra-clara;
+      font-weight: 600;
+      font-size: 20px;
+      font-family: Calibri;
+    }
+
+    input {
+      margin: 20px 5px 30px 30px;
+      padding: 10px;
+      background: transparent;
+      border-radius: 10px;
+      border: 2px solid $letra-clara;
+      color: $letra-clara;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &:hover input {
+      border: 2px solid $principal;
+    }
+
+    .gg-search {
+      margin-top: 30px;
+      margin-left: 5px;
+      color: $letra-clara;
+    }
+  }
+
+  .registro {
+    justify-content: flex-end;
+  }
+
+  &.nav-active {
+    display: flex;
+  }
+}
+
+.principal-index {
+  position: relative;
+
+  .site-section.inicio {
+    background-image: url(./../assets/centromty.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    margin: 100px 0;
+  }
+}
+
+/* LUGARES */
+.cartas-lugares {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 4.2rem));
+  gap: 1rem;
+  line-height: normal;
+
+  .carta {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: $sombra-clara;
+    display: flex;
+    flex-direction: column;
+    background: $carta-lugar;
+
+    img {
+      border-radius: 10px 10px 0 0;
+      width: 350px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .titulos-carta {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      padding: 0.5rem;
+    }
+
+    .desc-carta {
+      color: black;
+      padding: 0.2rem 0.5rem;
+
+      &:last-child {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .comentarios-centrado {
+      padding: 0.2rem 0.5rem;
+
+      .btn-mostrar {
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-size: 15px;
+        color: $letra-oscura;
+        margin-top: 0.5rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .comentarios {
+        max-height: 15rem;
+        overflow-y: scroll;
+
+        .card {
+          border-bottom: 1px solid $separador;
+        }
+      }
+
+      .area-comentario {
+        border-radius: 5px;
+        margin-top: 1rem;
+        width: 100%;
+      }
+
+      .publicar-comentario {
+        background: $fondo-menu;
+        color: $letra-clara;
+        border: none;
+        cursor: pointer;
+        padding: 1rem;
+        margin: 0.5rem 0;
+      }
+    }
+
+    textarea {
+      background: $fondo-area;
+      padding: 1rem;
+    }
+  }
+}
+
+.diseno-tabla {
+  text-align: center;
+  color: $letra-lugares;
+  font-family: Calibri;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 4.2rem));
+  justify-content: center;
+  grid-gap: 1.5rem;
+  max-width: 1000px;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  margin: 0 auto;
+
+  .carta {
+    filter: drop-shadow($sombra-clara);
+    transition: 0.5s ease;
+
+    .titulos {
+      background-color: $fondo-menu;
+      color: $letra-clara;
+      font-size: 20px;
+      border-radius: 0 0 15px 15px;
+      margin: 0;
+      margin-top: -1.1rem;
+    }
+
+    .imagenes {
+      height: 200px;
+      width: 300px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+      cursor: context-menu;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* CARTA SAL DE TU ZONA */
+.encabezado {
+  color: $letra-clara;
+  max-width: 100rem;
+  padding: 0 20px;
+  line-height: 2;
+  font-size: 2.8rem;
+  background-color: $fondo-encabezado;
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+
+  h1 {
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  p {
+    margin: -20px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+/* QUIENES SOMOS */
+.sobre-nosotros {
+  padding: 10px 50px;
+  background-color: rgb(169, 156, 136);
+  width: 60rem;
+  height: fit-content;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  filter: drop-shadow($sombra-clara);
+
+  .sn-titulo {
+    text-align: center;
+    text-transform: uppercase;
+    color: $letra-clara;
+    font-size: 3.5rem;
+    font-style: italic;
+  }
+
+  .sn-text {
+    color: $letra-clara;
+    font-size: 1.5rem;
+  }
+}
+
+/* FIN INDEX */
+
+@mixin site-img($imagen) {
+  background-image: $imagen;
+  background-position: center center;
+  background-size: contain;
+  height: 300px;
+  width: 100%;
+  margin: 50px 0;
+}
+
+/* CARTA DEL LUGAR */
+.carta-lugar {
+  display: block;
+  height: max-content;
+  position: relative;
+  margin-top: 20rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .lugares-page {
+    padding: 10px 50px;
+    border-radius: 10px;
+    background-color: $fondo-encabezado;
+    width: 50rem;
+    filter: drop-shadow($sombra-clara);
+    margin-top: -5rem;
+
+    .lp-titulo {
+      text-align: center;
+      text-transform: uppercase;
+      color: $letra-clara;
+      font-size: 25px;
+      font-style: italic;
+    }
+
+    hr {
+      width: 100%;
+      border: 0;
+      border-top: 1px solid $separador;
+      margin: 1.5rem 0;
+    }
+  }
+
+  .lug-izq {
+    float: left;
+    margin-left: 30px;
+  }
+
+  .lug-der {
+    float: right;
+    margin-right: 30px;
+  }
+
+  /* UBICACION DEL LUGAR */
+  .ubi-fondo {
+    background-color: $fondo-ubicacion;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 15rem;
+
+    .ubi-icon {
+      color: $letra-clara;
+      transform: rotate(45deg) scale(var(--ggs, 3)) !important;
+    }
+
+    .ub-titulo {
+      text-align: left;
+      text-transform: uppercase;
+      color: $letra-clara;
+      font-size: 25px;
+      font-style: italic;
+    }
+
+    .ub-text {
+      color: $letra-clara;
+    }
+  }
+
+  .btn-mostrar {
+    width: max-content;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    filter: drop-shadow($sombra-clara);
+    background: $fondo-ubicacion;
+    color: $letra-clara;
+  }
+
+  .comentarios-centrado {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .mostrar-comentarios {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .hacer-comentario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+
+      .label-comentario {
+        color: $letra-clara;
+        font-size: 15px;
+      }
+
+      .area-comentario {
+        width: max-content;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+
+      .publicar-comentario {
+        background: $btn-inicio;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        padding: 1rem;
+        margin: 1rem 0;
+        transition: 0.5s ease;
+
+        &:hover {
+          background: $btn-inicio-hover;
+        }
+      }
+    }
+
+    .comentarios {
+      background: white;
+      border-radius: 10px;
+      max-width: 600px;
+      filter: drop-shadow($sombra-clara);
+      max-height: 30rem;
+      overflow-y: scroll;
+
+      .card {
+        padding: 1rem;
+        .card-body {
+          .card-title {
+            font-size: 15px;
+            text-transform: capitalize;
+          }
+
+          .card-text {
+            border-bottom: 1px solid $separador;
+          }
+        }
+      }
+    }
+  }
+
+  /* IMAGENES DE LOS LUGARES */
+  .site-img.inicio {
+    @include site-img(url(./../assets/fundi.jpg));
+  }
+
+  .site-img2.inicio {
+    @include site-img(url(./../assets/bosque.jpg));
+  }
+
+  .site-img3.inicio {
+    @include site-img(url(./../assets/rio.jpg));
+  }
+
+  .site-img4.inicio {
+    @include site-img(url(./../assets/obispado.jpg));
+  }
+}
+
+.busqueda {
+  margin-top: 0;
+}
+
+/* FIN DE LUGARES */
+
+@mixin form-form {
+  width: 100%;
+  background: $fondo-form;
+  height: 100%;
+  border-radius: 10px;
+  filter: drop-shadow($sombra-clara);
+}
+
+@mixin form-content {
+  padding: 10px 25px;
+}
+
+@mixin class-legend {
+  color: $letra-clara;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+@mixin form-label {
+  color: $letra-clara;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+@mixin btn-registro {
+  width: 100%;
+  margin-top: 10px;
+  background-color: $principal;
+  border: none;
+  font-size: 23px;
+  color: $letra-clara;
+  padding: 10px;
+  -webkit-transition-duration: 0.4s;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  &:hover {
+    background-color: $btn-registro-hover;
+  }
+}
+
+@mixin btn-inicio {
+  display: flex;
+  justify-content: center;
+  background-color: $btn-inicio;
+  border: none;
+  font-size: 23px;
+  color: $letra-clara;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: $btn-inicio-hover;
+  }
+}
+
+@mixin registro-text {
+  color: $letra-clara;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+/* FORM REGISTRO */
+.form-registro {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+  gap: 5rem;
+
+  /* CARTA POR QUE UNIRTE */
+  .form-info {
+    width: 40rem;
+    padding: 20px 50px;
+    background-color: #a99c88;
+    border-radius: 10px;
+    filter: drop-shadow($sombra-clara);
+
+    .sn-titulo {
+      text-align: center;
+      text-transform: uppercase;
+      color: $letra-clara;
+      font-size: 2.5rem;
+      font-style: italic;
+    }
+
+    .sn-text {
+      color: $letra-clara;
+      font-size: 1.5rem;
+    }
+
+    .sn-text2 {
+      color: $letra-clara;
+      font-size: 1.8rem;
+    }
+  }
+
+  /* DATOS DEL USUARIO */
+  .form-form {
+    @include form-form();
+
+    .form-content {
+      @include form-content();
+
+      .class-legend {
+        @include class-legend();
+      }
+
+      .form-llenar {
+        display: grid;
+      }
+
+      .form-label {
+        @include form-label();
+      }
+
+      input {
+        height: 3.5rem;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 1rem;
+      }
+
+      .btn-registro {
+        @include btn-registro();
+      }
+
+      hr {
+        width: 100%;
+        border: 0;
+        border-top: 1px solid $separador-registro;
+        margin: 1.5rem 0;
+      }
+
+      .no-cuenta {
+        .registro-text {
+          @include registro-text();
+        }
+
+        .btn-inicio {
+          @include btn-inicio();
+        }
+      }
+    }
+  }
+}
+
+/* FIN FORM REGISTRO */
+
+/* FORM LOGIN */
+.form-login {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+
+  .form-form {
+    @include form-form();
+
+    .form-content {
+      @include form-content();
+
+      .class-legend {
+        @include class-legend();
+      }
+
+      .form-llenar2 {
+        display: grid;
+        padding-bottom: 20px;
+
+        .form-label {
+          @include form-label();
+        }
+
+        input {
+          height: 3.5rem;
+          font-size: 15px;
+          border-radius: 5px;
+          padding: 1rem;
+        }
+      }
+
+      .btn-registro {
+        @include btn-registro();
+      }
+    }
+
+    .no-cuenta {
+      margin-top: 2rem;
+
+      .registro-text {
+        @include registro-text();
+      }
+
+      .btn-inicio {
+        margin-top: 1rem;
+        @include btn-inicio();
+      }
+    }
+
+    a {
+      text-decoration: none;
+      .texto-olvido {
+        text-align: center;
+        color: $letra-clara;
+        transition: 0.5s ease;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.lp-text {
+  color: $letra-clara;
+  font-size: 2rem;
+}
+
+.carta-recuperacion {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  background: $fondo-form;
+  max-width: 50rem;
+  margin: 5rem auto;
+  border-radius: 10px;
+  color: $letra-clara;
+  padding: 2rem;
+
+  .titulo-recuperacion {
+  }
+
+  .cuerpo-recuperacion {
+    margin-bottom: 2rem;
+
+    label {
+      font-size: 17px;
+    }
+
+    input {
+      width: 100%;
+      font-size: 15px;
+      padding: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+
+  .botones-recuperacion {
+    font-weight: 700;
+
+    a {
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+      background: $fondo-encabezado;
+      color: $letra-clara;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-right: 1rem;
+      transition: 0.5s ease;
+
+      &:hover {
+        background: $btn-inicio-hover;
+      }
+    }
+
+    button {
+      font-weight: 700;
+      font-size: 16px;
+      background: $principal;
+      color: $letra-clara;
+      border: none;
+      border-radius: 10px;
+      padding: 1.1rem;
+      transition: 0.5s ease;
+
+      &:hover {
+        background: $btn-registro-hover;
+      }
+    }
+  }
+}
+
+.sus {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  button {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    background: $btn-inicio;
+    transition: 0.5s ease;
+    color: $letra-clara;
+
+    &:hover {
+      background: $btn-inicio-hover;
+    }
+  }
+}
+
+@import "./pantallaChica";

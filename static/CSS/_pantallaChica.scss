@@ -1,0 +1,244 @@
+@media only screen and (max-width: 920px) {
+  /* HEADER */
+  /* BARRA DE INICIO */
+  .back-barra {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    display: none;
+
+    .disenonav {
+      display: inline-block;
+      color: $letra-clara;
+      padding: 20px 20px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      font-family: Calibri;
+      font-size: 20px;
+      margin-top: 10px;
+      border-radius: 10px;
+      transition: 0.4s ease;
+      background: none;
+      border: none;
+
+      &:hover {
+        background: rgb(88, 129, 87);
+      }
+    }
+
+    #btn-sus {
+      justify-content: flex-start;
+      text-align: initial;
+      padding: 0 2rem;
+    }
+
+    #btn-desus {
+      display: none;
+      justify-content: flex-start;
+      text-align: initial;
+      padding: 0 2rem;
+    }
+
+    .search {
+      display: none;
+
+      p {
+        color: $letra-clara;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: Calibri;
+      }
+
+      input {
+        margin: 20px 5px 30px 30px;
+        padding: 10px;
+        background: transparent;
+        border-radius: 10px;
+        border: 2px solid $letra-clara;
+        color: $letra-clara;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &:hover input {
+        border: 2px solid $principal;
+      }
+
+      .gg-search {
+        margin-top: 30px;
+        margin-left: 5px;
+        color: $letra-clara;
+      }
+    }
+
+    .registro {
+      justify-content: flex-end;
+    }
+  }
+
+  /* TITULOS */
+  .inicio {
+    /* TITULO HEADER */
+    .titulo-header {
+      display: flex;
+      align-items: center;
+      background-color: #262626;
+      padding-left: 25px;
+
+      .titulo-text {
+        margin-left: 20px;
+      }
+
+      .name {
+        color: $letra-lugares;
+      }
+    }
+
+    /* botones de la barra de navegacion*/
+    .bar {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    .title-lugares {
+      max-width: 100rem;
+      width: 30rem;
+      margin: 0 auto;
+      margin-top: 1.5rem;
+    }
+
+    .title-lugares h2 {
+      margin-block-end: 0;
+    }
+  }
+
+  /* BODY */
+  /* CARTA SAL DE TU ZONA */
+  .encabezado {
+    max-width: 100rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+
+    h1 {
+      margin: 0;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    p {
+      margin-top: 0.5rem;
+    }
+  }
+
+  /* QUIENES SOMOS */
+  .sobre-nosotros {
+    padding: 20px;
+    max-width: 100rem;
+    width: 90%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border-radius: 10px;
+
+    .sn-titulo {
+      text-align: center;
+      text-transform: uppercase;
+      color: $letra-clara;
+      font-size: 3.5rem;
+      font-style: italic;
+    }
+
+    .sn-text {
+      color: $letra-clara;
+      font-size: 1.5rem;
+    }
+  }
+
+  /* FOTO QUIENES SOMOS*/
+  .site-section.inicio {
+    position: relative;
+    bottom: 30rem;
+    z-index: -1;
+  }
+
+  /* REGISTRO */
+  .form-registro {
+    flex-direction: column;
+
+    .form-info {
+      width: 90%;
+      margin: 1rem auto;
+    }
+
+    .form-form {
+      width: 90%;
+      margin: 1rem auto;
+    }
+  }
+
+  .carta-recuperacion {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  /* Hamburgesa */
+  .burger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+    transform: translateY(50%);
+    cursor: pointer;
+    z-index: 1500;
+    padding: 0.5rem;
+    border-radius: 10px;
+
+    div {
+      background-color: $letra-clara;
+      border-radius: 10px;
+      width: 35px;
+      height: 3px;
+      margin: 5px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  /* TRANSFORMACION de la hamburgesa */
+  .toggle {
+    .line1 {
+      transform: rotate(-45deg) translate(-6px, 5px);
+    }
+
+    .line2 {
+      opacity: 0;
+    }
+
+    .line3 {
+      transform: rotate(45deg) translate(-6px, -5px);
+    }
+  }
+
+  /* ANIMACION */
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
