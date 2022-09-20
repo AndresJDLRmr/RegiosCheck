@@ -91,7 +91,7 @@ h3 {
   padding-left: 20px;
   line-height: 2;
   font-size: 3.4rem;
-  margin: 3rem auto;
+  margin: 20rem auto 3rem auto;
   align-items: center;
   background-color: var(--fondoTitulos);
   -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4));
@@ -133,6 +133,12 @@ h3 {
   border: none;
 }
 
+.fijar{
+    z-index: 1;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
 .back-barra .disenonav:hover {
   background: var(--fondoTitulos);
 }

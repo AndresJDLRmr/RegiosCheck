@@ -16,66 +16,47 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
     <script src="./../JS/script.js" async></script>
 
-    <script>
-      posicionarMenu();
-      
-      $(window).scroll(function() {    
-          posicionarMenu();
-      });
-      
-      function posicionarMenu() {
-          var altura_del_header = $('.header').outerHeight(true);
-          var altura_del_menu = $('.menu').outerHeight(true);
-      
-          if ($(window).scrollTop() >= altura_del_header){
-              $('.menu').addClass('fixed');
-              $('.wrapper').css('margin-top', (altura_del_menu) + 'px');
-          } else {
-              $('.menu').removeClass('fixed');
-              $('.wrapper').css('margin-top', '0');
-          }
-      }
-      
-      </script>
   </head>
 
-  <body class="diseno-body">
+  <body class="diseno-body ">
     <header class="site-header inicio">
       <!--barra de navegacion-->
-      <div class="titulo-header">
-        <img src="./../assets/logo.png" class="bar" />
-        <h1 class="name titulo-text">Regios Check</h1>
-
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+      <div class="fijar">
+        <div class="titulo-header">
+          <img src="./../assets/logo.png" class="bar" />
+          <h1 class="name titulo-text">Regios Check</h1>
+  
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </div>
+  
+        <!-- Barra de inicio -->
+        <nav class="back-barra">
+          <a href="Inicio.html" class="disenonav">Inicio</a>
+          <a href="lugares.html" class="disenonav">Lugares</a>
+          <div class="search">
+            <input
+              type="search"
+              name="busqueda"
+              placeholder="Buscar"
+              onclick="window.location.href='lugares.html'"
+            />
+            <i class="gg-search"></i>
+          </div>
+          <a href="registro.html" class="disenonav registro" id="registrar-ses">
+            Registrarse
+          </a>
+          <a href="iniciarSesion.html" class="disenonav registro" id="abrir-ses"
+            >Iniciar Sesion</a
+          >
+          <a class="disenonav registro" id="cerrar-ses" onclick="logout()">
+            Cerrar Sesion
+          </a>
+        </nav>
       </div>
-
-      <!-- Barra de inicio -->
-      <nav class="back-barra">
-        <a href="Inicio.html" class="disenonav">Inicio</a>
-        <a href="lugares.html" class="disenonav">Lugares</a>
-        <div class="search">
-          <input
-            type="search"
-            name="busqueda"
-            placeholder="Buscar"
-            onclick="window.location.href='lugares.html'"
-          />
-          <i class="gg-search"></i>
-        </div>
-        <a href="registro.html" class="disenonav registro" id="registrar-ses">
-          Registrarse
-        </a>
-        <a href="iniciarSesion.html" class="disenonav registro" id="abrir-ses"
-          >Iniciar Sesion</a
-        >
-        <a class="disenonav registro" id="cerrar-ses" onclick="logout()">
-          Cerrar Sesion
-        </a>
-      </nav>
 
       <!-- Carta sal de tu zona -->
       <div class="encabezado">
